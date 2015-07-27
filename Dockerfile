@@ -1,5 +1,5 @@
 
-FROM girder/hadoop
+FROM opadron/hadoop
 MAINTAINER Omar Padron "omar.padron@kitware.com"
 
 USER root
