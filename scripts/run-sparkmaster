@@ -1,0 +1,8 @@
+#! /usr/bin/env sh
+
+# spark master
+spark-class org.apache.spark.deploy.master.Master \
+    --host "$( hostname )"                        \
+    --port "$SPARK_MASTER_PORT"                   \
+    --webui-port "$SPARK_MASTER_WEBUI_PORT"
+

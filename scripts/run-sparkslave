@@ -1,0 +1,9 @@
+#! /usr/bin/env sh
+
+# spark slave
+spark-class org.apache.spark.deploy.worker.Worker \
+    --host       "$( hostname )"                  \
+    --port       "$SPARK_WORKER_PORT"             \
+    --webui-port "$SPARK_WORKER_WEBUI_PORT"       \
+    "$SPARK_MASTER:$SPARK_MASTER_PORT"
+
